@@ -1,0 +1,54 @@
+/* It is recommended to place all your extra/additional CSS rules here */
+.thumbnail>img {
+  display: block;
+  max-width: auto;
+  height: 80px;
+}
+.popup-alt-image-gallery .item > a {
+  display: block;
+  position: relative;
+  height: 120px;
+  width: auto;
+}
+a.heroshot img {
+cursor:url(/img/layout/backgrounds/moz-zoom.gif), -moz-zoom-in;
+}
+
+div,a,span {cursor: url(http://www.rw-designer.com/cursor-extern.php?id=23624);}
+
+.scroll_work{ width:530px;
+            height:540px;
+            overflow:scroll;
+
+           }
+.scroll_work{
+
+    scrollbar-face-color: #367CD2;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+}
+
+/* Let's get this party started */
+.scroll_work::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+
+ 
+/* Handle */
+.scroll_work::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(153, 255, 255, 1); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+p,ul{
+  font-size: 13px !important;
+  font-family: 'ClearSans-Light';
+}
+

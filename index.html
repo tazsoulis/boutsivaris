@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Boutsivaris</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/other_images/fa.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- vegas bg -->
+    <link href="assets/js/vegas/jquery.vegas.min.css" rel="stylesheet">
+    <!-- owl carousel css -->
+    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <!-- intro animations -->
+    <link href="assets/js/wow/animate.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- lightbox -->
+    <link href="assets/js/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- styles for this template -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- place your extra custom styles in this file -->
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/all_components.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+      var myCenter=new google.maps.LatLng(40.652462,22.912611);
+      var marker;
+      function initialize()
+      {
+      var mapProp = {
+        center:myCenter,
+        zoom:17,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      var marker=new google.maps.Marker({
+        position:myCenter,
+        animation:google.maps.Animation.BOUNCE
+        });
+      marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+
+<body data-default-background-img="assets/images/other_images/profil.png" data-overlay="true" data-overlay-opacity="0.35">
+    <!-- Outer Container -->
+    <div id="outer-container">
+      <!-- Left Sidebar -->
+      <section id="left-sidebar"> 
+        <div class="logo"><br><br>
+          <span style="font-size:20px; margin-left:-30px;" >design</span><br>
+          <span style="margin-left:-70px; font-size:20px;">& </span><br>
+          <span style="font-size:20px;">&nbsp &nbsp&nbsp construction</span><br><br><br>
+          <a href="#intro" class="link-scroll"><img src="assets/images/other_images/b2-internet.png" alt="Twilli Air"></a><br>
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+        
+        <ul id="main-menu" > 
+          <li id="menu-item-tabs" class="menu-item scroll" ><a href="#tabs">Έργα</a></li>
+          <li id="menu-item-text" class="menu-item scroll" ><a href="#text">Προφίλ</a></li>
+          <li id="menu-item-carousel" class="menu-item scroll"><a href="#carousel">Ομάδα</a></li>
+          <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Επικοινωνία</a></li>
+        </ul><!-- #main-menu -->
+
+        </div><!-- .logo -->
+       <!-- Menu Icon for smaller viewports -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+      <section id="main-content" class="clearfix">       
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/profil.png">
+          <div class="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">
+            <div class="col-sm-10 col-md-9 pull-right">
+                <section class="feature-text text-right">
+                  <span style="font-size:40px;">ΜΠΟΥΤΣΙΒΑΡΗΣ</span><br>
+                  <span style="font-size:20px;">Μελέτη | Κατασκευή | Επίβλεψη</span>
+                </section>
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <article id="tabs"  class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bf_profil.png">
+          <div class="content-wrapper mid-vertical-positioning clearfix">
+            <div class="col-sm-10 col-md-12 pull-right">
+                <h1 class="section-title text-right">Εργα</h1>
+                <div class="tabpanel styled-tabs uniform-height " role="tabpanel">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist" text-hidden-xs="true">
+                    <li role="presentation" class="active"><a href="#tabs-tab1" aria-controls="tabs-tab1" role="tab" data-toggle="tab"><i class="icon fa fa-cubes"></i><span>ΚΤΙΡΙΑ</span></a></li>
+                    <li role="presentation"><a href="#tabs-tab2" aria-controls="tabs-tab2" role="tab" data-toggle="tab"><i class="icon fa fa-picture-o"></i><span>RENDERINGS</span></a></li>
+                    <li role="presentation"><a href="#tabs-tab3" aria-controls="tabs-tab3" role="tab" data-toggle="tab"><i class="icon fa fa-video-camera"></i><span>REAL-TIME</span></a></li>
+                     <li role="presentation"><a href="#tabs-tab4" aria-controls="tabs-tab4" role="tab" data-toggle="tab"><i class="icon fa fa-plus"></i><span>ΛΟΙΠΑ PROJECTS</span></a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="tabs-tab1">
+                    <!-- 1 project -->
+                    <div class="col-lg-8 col-xs-12 ">
+                       <article class="text-center">
+                       <div class="scroll_work visible-lg"><h4>ΚΑΤΑΛΟΓΟΣ ΕΡΓΩΝ</h4>
+                        <ul style="font-size:10px;">
+                          <li>Μονοκατοικία στα Πετράλωνα Χαλκιδικής | 2014</li>
+                          <li>Αλλαγή χρήσης  ορόφου από γυμναστήριο σε γραφεία στη Θεσσαλονίκη | 2013</li>
+                          <li>Συννένωση διαμερισμάτων και εσωτερικές διαρρυθμίσεις στις Συκιές Θεσσαλονίκης | 2012</li>
+                          <li>Διώροφη μονοκατοικία με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης | 2011</li>
+                          <li>Συγκρότημα δεκατριών κατοικιών “Άλσος” στο Πανόραμα Θεσσαλονίκης | 2011</li>
+                          <li>Διώροφη οικοδομή με υπόγειο στην Εξοχή Θεσσαλονίκης | 2010</li>
+                          <li>Εσωτερικές διαρρυθμίσεις σε κατοικία στο Ασβεστοχώρι Θεσσαλονίκης | 2008</li>
+                          <li>Διώροφη οικοδομή με υπόγειο στη Νεοχωρούδα Θεσσαλονίκης | 2008</li>
+                          <li>Δυο διώροφες κατοικίες με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης |2007</li>
+                          <li>Συγκρότημα επτά κατοικιών στο Ασβεστοχώρι Θεσσαλονίκης | 2007 </li>
+                          <li>Συγκρότημα τριών κατοικιών στο Ασβεστοχώρι Θεσσαλονίκης | 2006 </li>
+                          <li>Συγκρότημα οκτώ κατοικιών στο Ασβεστοχώρι Θεσσαλονίκης |2002 </li>
+                          <li>Συγκρότημα κατοικιών στο Ασβεστοχώρι Θεσσαλονίκης |2002 </li>
+                          <li>Συγκρότημα τεσσάρων τριώροφων κατοικιών στο Ασβεστοχώρι Θεσσαλονίκης | 2001</li>
+                          <li>Ξενοδοχείο επιπλωμένων διαμερισμάτων στην Εξοχή Θεσσαλονίκης | 2000</li>
+                          <li>Συγκρότημα δέκα διώροφων κατοικιών στο Πανόραμα Θεσσαλονίκης  |2000</li>
+                          <li>Βιοτεχνία επεξεργασίας χάρτου στη ΒΙΠΕΘ | 2000</li>
+                          <li>Συγκρότημα τριών τριώροφων κατοικιών στο Ασβεστοχώρι Θεσσαλονίκης | 1999</li>
+                          <li>Τριώροφη οικοδομή με ισόγειους χώρους στάθμευσης και τμήμα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης | 1999</li>
+                          <li>Διώροφη οικοδομή με τμήμα υπογείου | 1999</li>
+                          <li>Βιοτεχνία επεξεργασίας μαρμάρων στο Καβαλάρι Θεσσαλονίκης | 1999 </li>
+                          <li>Συγκρότημα τριών τριώροφων κατοικιών με ισόγειους χώρους στάθευσης και τμήμα υπογείου| 1999</li>
+                          <li>Διώροφη οικοδομή με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης | 1998</li>
+                          <li>Ισόγεια κατοικία με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης | 1998</li>
+                          <li>Τριώροφη οικοδομή με ισόγειο χώρο στάθμευσης  στο Ασβεστοχώρι Θεσσαλονίκης | 1998</li>
+                          <li>Διώροφη κατοικία με υπόγειο στην Εξοχή Θεσσαλονίκης | 1998</li>
+                          <li>Διώροφη κατοικία  με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης | 1997</li>
+                          <li>Διώροφη οικοδομή με υπόγειο στην Εξοχή Θεσσαλονίκης | 1997</li>
+                          <li>Τριώροφη οικοδομή με τμήμα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης | 1997 </li>
+                          <li>Οικοδομή με υπόγειο στην Καρδία Θεσσαλονίκης  | 1997</li>
+                          <li>Κτίριο γραφείων και καταστημάτων στη Θεσσαλονίκη | 1996 </li>
+                          <li>Διώροφη κατοικία με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης | 1995</li>
+                          <li>Προσθήκη καθ’ ύψος  σε πολυκατοικία στην Αρετσού Θεσσαλονίκης | 1995</li>
+                          <li>Τριώροφη οκοδομή με ισόγειο χώρο στάθμευσης και τμήμα υπογείου | 1994 </li>
+                          <li>Αλλαγή διαρρύθμισης ορόφου, διαρρύθμιση ισογείου και προσθήκη κατ’ επέκταση σε υφιστάμενη οικοδομή στο Πανόραμα Θεσσαλονίκης | 1994</li>
+                          <li>Τριώροφη κατοικία με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης | 1994 </li>
+                          <li>Τριώροφη οικοδομή με τμήμα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης | 1994 </li>
+                          <li>Διώροφη οικοδομή με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης | 1991 </li>
+                          <h5>Περίοδος (1983 - 1993)</h5>  
+                          <li>Διώροφη οικοδομή στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Διώροφη οικοδομή  στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Διώροφη οικοδομή με υπόγειο στην Εξοχή Θεσσαλονίκης </li>
+                          <li>Διώροφη οικοδομή με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Τριώροφη οικοδομή με ισόγειο χώρο στάθμευσης στο Ασβεστοχώρι Θεσσαλονίκης</li>
+                          <li>Διώροφη κατοικία με υπόγειο στην Εξοχή Θεσσαλονίκης </li>
+                          <li>Διώροφη οικοδομή με υπόγειο στην Εξοχή Θεσσαλονίκης </li>
+                          <li>Τριώροφη οικοδομή στο Ασβεστοχώρι Θεσσαλονίκης</li>
+                          <li>Διώροφη οικοδομή με υπόγειο  στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Ισόγεια κατοικία με υπόγειο στην Εξοχή Θεσσαλονίκης </li>
+                          <li>Διώροφη οικοδομή με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Διώροφη κατοικία με υπόγειο στα Ν.Σύλλατα Χαλκιδικής </li>
+                          <li>Τριώροφη οικοδομη με τμήμα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Διώροφη οικοδομή στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Διώροφη οικοδομή με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Τριώροφη οικοδομή με τμήμα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης</li>
+                          <li>Προσθήκη ορόφου και αλλαγή χρήσης ισογείου από κατάστημα σε κατοικία με τμήμα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Τριώροφη οικοδομή με ισόγειο χώρο στάθμευσης και τμήμα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Διώροφη κατοικία με υπόγειο στην Εξοχή Θεσσαλονίκης </li>
+                          <li>Διώροφη οικοδομή με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Διώροφη κατοικία με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Τριώροφη οικοδομή με τμήμα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Δυο ίδιες διώροφες οικοδομές με ισόγειους χώρους στάθμευσης και τμήματα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Τριώροφη οικοδομή με ισόγειο χώρο στάθμευσης και τμήμα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Τριώροφη οικοδομή στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Τριώροφη οικοδομή με ισόγειο χώρο στάθμευσης και τμήμα υπογείου στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Διώροφη οικοδομή στην Εξοχή Θεσσαλονίκης </li>
+                          <li>Τριώροφη οικοδομή στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Ισόγεια κατοικία με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                          <li>Διώροφη οικοδομή με υπόγειο στο Ασβεστοχώρι Θεσσαλονίκης </li>
+                        </ul>
+                      </div>
+                    </article>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <article class="feature-col col-md-6 text-center">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-13', '', 'full-size');" class="thumbnail linked">
+                      <img src="assets/images/completed/Psomilias/1.png"  class="icon" alt="Lorem Ipsum">
+                      <span class="color ">Μονοκατοικία</span>
+                    </a><!-- .thumbnail -->
+                    <div class="content-to-populate-in-modal" id="modal-content-13">
+                      <h3 align="left">Μονοκατοικία</h3>
+                      <p align="left" style="font-size:15px;">
+                          Τοποθεσία: Πετράλωνα Χαλκιδικής<br>
+                          Χρονολογία: 2014<br>
+                          Μελέτη: Χ.Μπουτσιβάρης<br>
+                          Έκταση: 2.500 Μ2<br>
+                          Κατάσταση: σε εξέλιξη<br>
+                      </p>
+                      <!-- alt image slider inside popup -->
+                      <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                        <div class="item"><a href="assets/images/completed/psomilias/1.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/Psomilias/1.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/Psomilias/2.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/Psomilias/2.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/Psomilias/4.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/Psomilias/4.jpg"></a></div>
+                      </div>
+                    </div><!-- #modal-content-8 --> 
+                  </article>
+                  <!-- 2 project -->
+                  <article class="feature-col col-md-6 text-center">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-9', '', 'full-size');" class="thumbnail linked">
+                      <img src="assets/images/completed/alsos/1.png"  class="icon" alt="Lorem Ipsum">
+                      <span class="color ">Συγκρότημα</span>
+                    </a><!-- .thumbnail -->
+                    <!-- 2 project -->
+                    <div class="content-to-populate-in-modal" id="modal-content-9">
+                      <h3 align="left">Συγκρότημα δεκατριών κατοικιών “Άλσος”</h3>
+                      <p align="left" style="font-size:15px;"><br>
+                          Τοποθεσία: Πανόραμα Θεσσαλονίκης<br>
+                          Χρονολογία: 2011<br>
+                          Κατασκευή: ARBO Τεχνική Κατασκευαστική Εταιρία<br>
+                          Χ. Μπουτσιβάρης - Α. Ιωάννου<br>
+                          Έκταση: 2.700 Μ2<br>
+                          Κατάσταση: ολοκληρωμένο<br>
+                      </p>
+                      <!-- alt image slider inside popup -->
+                      <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                        <div class="item"><a href="assets/images/completed/alsos/1.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/1.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/2.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/2.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/3.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/3.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/4.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/4.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/5.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/5.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/6.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/6.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/7.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/7.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/8.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/8.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/9.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/9.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/10.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/10.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/11.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/11.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/12.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/12.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/13.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/13.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/14.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/14.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/15.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/15.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/16.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/16.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/alsos/17.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/alsos/17.png"></a></div>
+                      </div>
+                    </div><!-- #modal-content-8 -->
+                    <!-- end 2 project -->
+                      <!-- 3 project -->
+                  </article>
+                  <!-- end 2 project -->
+                  <!-- 3 project -->
+                   <article class="feature-col col-lg-6 text-center">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-14', '', 'full-size');" class="thumbnail linked">
+                      <img src="assets/images/completed/saligkaras/4.jpg"  class="icon" alt="Lorem Ipsum">
+                      <span class="color">Kατοικίες</span>
+                    </a><!-- .thumbnail -->
+                    <div class="content-to-populate-in-modal" id="modal-content-14">
+                      <h3 align="left">Δυο διώροφες κατοικίες</h3>
+                      <p align="left" style="font-size:15px;"><br>
+                          Τοποθεσία: Ασβεστοχώρι Θεσσαλονίκης<br>
+                          Χρονολογία: 2007<br>
+                          ΚΚατασκευή – Επίβλεψη: Χ.Μπουτσιβάρης<br>
+                          Χ. Μπουτσιβάρης - Α. Ιωάννου<br>
+                          Έκταση: 860 Μ2<br>
+                          Κατάσταση: ολοκληρωμένο<br>
+                      </p>
+                      <!-- alt image slider inside popup -->
+                      <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                        <div class="item"><a href="assets/images/completed/saligkaras/1.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/saligkaras/1.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/saligkaras/2.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/saligkaras/2.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/saligkaras/3.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/saligkaras/3.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/saligkaras/4.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/saligkaras/4.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/saligkaras/5.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/saligkaras/5.jpg"></a></div>
+                      </div>
+                    </div><!-- #modal-content-8 -->
+                  </article>
+                  <!-- end 3 project -->
+                  <!-- 4 project -->
+                 <article class="feature-col col-lg-6 text-center">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-15', '', 'full-size');" class="thumbnail linked">
+                      <img src="assets/images/completed/tswtsis/1.jpg"  class="icon" alt="Lorem Ipsum">
+                      <span class="color ">Συγκρότημα</span>
+                    </a><!-- .thumbnail -->
+                    <div class="content-to-populate-in-modal" id="modal-content-15">
+                      <h3 align="left">Συγκρότημα επτά κατοικιών</h3>
+                      <p align="left" style="font-size:15px;">
+                          Τοποθεσία: Ασβεστοχώρι Θεσσαλονίκης<br>
+                          Χρονολογία: 2007<br>
+                          Κατασκευή: Χ.Μπουτσιβάρης – Α.Ιωάννου Ο.Ε.<br>
+                          Χ. Μπουτσιβάρης - Α. Ιωάννου<br>
+                          Έκταση: 795 Μ2<br>
+                          Κατάσταση: ολοκληρωμένο<br>
+                      </p>
+                      <!-- alt image slider inside popup -->
+                      <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                        <div class="item"><a href="assets/images/completed/tswtsis/1.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/tswtsis/1.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/tswtsis/2.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/tswtsis/2.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/tswtsis/3.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/tswtsis/3.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/tswtsis/4.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/tswtsis/4.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/tswtsis/5.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/tswtsis/5.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/tswtsis/6.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/tswtsis/6.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/tswtsis/7.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/tswtsis/7.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/tswtsis/8.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/tswtsis/8.jpg"></a></div>
+                      </div>
+                    </div><!-- #modal-content-8 -->
+                  </article>
+                  <!-- end 4 project -->
+                  <!-- 5 project -->
+                  <article class="feature-col col-lg-6 text-center">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-11', '', 'full-size');" class="thumbnail linked">
+                      <img src="assets/images/completed/lotofagoi/1.jpg" class="icon" alt="Lorem Ipsum">
+                      <span class="color ">Συγκρότημα</span>
+                    </a><!-- .thumbnail -->
+                    <div class="content-to-populate-in-modal" id="modal-content-11">
+                      <h3 align="left">Συγκρότημα τριών κατοικιών</h3>
+                      <p align="left" style="font-size:15px;">
+                          Τοποθεσία: Ασβεστοχώρι Θεσσαλονίκης<br>
+                          Χρονολογία: 2006<br>
+                          Κατασκευή: ARBO Τεχνική Κατασκευαστική Εταιρία<br>
+                          Χ. Μπουτσιβάρης - Α. Ιωάννου<br>
+                          Έκταση: 300 Μ2<br>
+                          Κατάσταση: ολοκληρωμένο<br>
+                      </p>
+                      <!-- alt image slider inside popup -->
+                      <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                        <div class="item"><a href="assets/images/completed/lotofagoi/1.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/lotofagoi/1.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/lotofagoi/2.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/lotofagoi/2.jpg"></a></div>            
+                      </div>
+                    </div><!-- #modal-content-8 -->
+                  </article>
+                  <!-- end 5 project -->
+                  <!-- 6 project -->
+                  <article class="feature-col col-lg-6 text-center">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-16', '', 'full-size');" class="thumbnail linked">
+                      <img src="assets/images/completed/25is200/1.jpg" class="icon" alt="Lorem Ipsum">
+                      <span class="color ">Συγκρότημα</span>
+                    </a><!-- .thumbnail -->
+                    <div class="content-to-populate-in-modal" id="modal-content-16">
+                      <h3 align="left">Συγκρότημα οκτώ κατοικιών </h3>
+                      <p align="left" style="font-size:15px;">
+                          Τοποθεσία: Ασβεστοχώρι Θεσσαλονίκης<br>
+                          Χρονολογία: 2002<br>
+                          Μελέτη: Β.Καλαφάτη - Παπαϊωάνου<br>
+                          Κατασκευή: Χ.Μπουτσιβάρης – Α.Ιωάννου Ο.Ε.<br>
+                          Έκταση: 2.300 Μ2<br>
+                          Κατάσταση: ολοκληρωμένο<br>
+                      </p>
+                      <!-- alt image slider inside popup -->
+                      <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                        <div class="item"><a href="assets/images/completed/25is200/1.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/25is200/1.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/25is200/2.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/25is200/2.jpg"></a></div>
+                        <div class="item"><a href="assets/images/completed/25is200/3.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/25is200/3.jpg"></a></div>
+                      </div>
+                    </div><!-- #modal-content-8 -->
+                  </article>
+                  <!-- end 6 project -->
+                  <!-- 7 project -->
+                  <article class="feature-col col-lg-6 text-center">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-10', '', 'full-size');" class="thumbnail linked">
+                      <img src="assets/images/completed/kampouridou/1.png" class="icon" alt="Lorem Ipsum">
+                      <span align="left" class="color">Συγκρότημα</span>
+                    </a><!-- .thumbnail -->
+                    <div class="content-to-populate-in-modal" id="modal-content-10">
+                      <h3 align="left">Συγκρότημα δέκα διώροφων κατοικιών</h3>
+                      <p align="left" style="font-size:15px;">
+                          Τοποθεσία: Πανόραμα Θεσσαλονίκης<br>
+                          Χρονολογία: 2002<br>
+                          Μελέτη: Χ.Μπουτσιβάρης, Β.Καλαφάτη – Παπαϊωάννου<br>
+                          Κατασκευή - Επίβλεψη: Χ.Μπουτσιβάρης – Α.Ιωάννου & ΣΙΑ Ο.Ε.<br>
+                          Έκταση: 1.540 Μ2<br>
+                          Κατάσταση: ολοκληρωμένο<br>
+                      </p>
+                      <!-- alt image slider inside popup -->
+                      <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                        <div class="item"><a href="assets/images/completed/kampouridou/1.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/kampouridou/1.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/kampouridou/2.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/kampouridou/2.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/kampouridou/3.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/kampouridou/3.png"></a></div>
+                      </div>
+                    </div><!-- #modal-content-8 -->
+                  </article>
+                  <!-- end 7 project -->
+                  <!-- 8 project -->
+                  <article class="feature-col col-lg-6 text-center">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-18', '', 'full-size');" class="thumbnail linked">
+                      <img src="assets/images/completed/monastiriou/1.png" class="icon" alt="Lorem Ipsum">
+                      <span class="color ">Κτίριο</span>
+                    </a><!-- .thumbnail -->
+                    <div class="content-to-populate-in-modal" id="modal-content-18">
+                      <h3 align="left">Κτίριο γραφείων και καταστημάτων</h3>
+                      <p align="left" style="font-size:15px;">
+                          Τοποθεσία: Θεσσαλονίκη<br>
+                          Χρονολογία: 1996<br>
+                          Κατασκευή – Επίβλεψη: Δ.Ιωάννου ΑΕΒΕ<br>
+                          Μελέτη: Χ.Μπουτσιβαρης<br>
+                          Έκταση: 910 Μ2<br>
+                          Κατάσταση: ολοκληρωμένο<br>
+                      </p>
+                      <!-- alt image slider inside popup -->
+                      <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                        <div class="item"><a href="assets/images/completed/monastiriou/1.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/monastiriou/1.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/monastiriou/2.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/monastiriou/2.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/monastiriou/3.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/monastiriou/3.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/monastiriou/4.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/monastiriou/4.png"></a></div>
+                        <div class="item"><a href="assets/images/completed/monastiriou/5.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/completed/monastiriou/5.png"></a></div>
+                      </div>
+                    </div><!-- #modal-content-8 -->  
+                  </article>
+                    </div>
+                   <!-- end 8 project -->
+                    </div>
+                    <!-- Rendering 1 project -->
+                    <div role="tabpanel" class="tab-pane fade" id="tabs-tab2">
+
+                      <article  class=" col-lg-3 ">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-26');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/1.png"  class="icon" alt="Lorem Ipsum">
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-26">
+                          <img data-img-src="assets/images/renderings/1.png" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/1.png">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+
+                      <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-27');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/2.jpg"  class="icon" alt="Lorem Ipsum">
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-27">
+                          <img data-img-src="assets/images/renderings/2.jpg" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/2.jpg">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+
+                      <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-29');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/3.jpg"  class="icon" alt="Lorem Ipsum">
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-29">
+                          <img data-img-src="assets/images/renderings/3.jpg" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/3.jpg">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+
+                     <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-28');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/4.png"  class="icon" alt="Lorem Ipsum">
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-28">
+                          <img data-img-src="assets/images/renderings/4.png" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/4.png">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+
+                     <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-32');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/5.jpg"  class="icon" alt="Lorem Ipsum">
+                      
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-32">
+                          <img data-img-src="assets/images/renderings/5.jpg" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/5.jpg">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+
+                     <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-33');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/6.jpg"  class="icon" alt="Lorem Ipsum">
+                      
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-33">
+                          <img data-img-src="assets/images/renderings/6.jpg" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/6.jpg">
+                        </div><!-- #modal-content-7 -->
+
+                     </article>
+                     <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-40');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/7.jpg"  class="icon" alt="Lorem Ipsum">
+                      
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-40">
+                          <img data-img-src="assets/images/renderings/7.jpg" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/7.jpg">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+                     <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-41');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/8.jpg"  class="icon" alt="Lorem Ipsum">
+                      
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-41">
+                          <img data-img-src="assets/images/renderings/8.jpg" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/8.jpg">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+
+                     <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-42');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/9.jpg"  class="icon" alt="Lorem Ipsum">
+                      
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-42">
+                          <img data-img-src="assets/images/renderings/9.jpg" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/9.jpg">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+                     <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-43');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/10.jpg"  class="icon" alt="Lorem Ipsum">
+                      
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-43">
+                          <img data-img-src="assets/images/renderings/10.jpg" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/10.jpg">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+                     <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-44');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/11.jpg"  class="icon" alt="Lorem Ipsum">
+                      
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-44">
+                          <img data-img-src="assets/images/renderings/11.jpg" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/11.jpg">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+                     <article  class=" col-lg-3">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-45');" class="thumbnail linked">
+                          <div class="image-container text-center" >
+                            <img style="width:160px; height:180px;" src="assets/images/renderings/12.jpg"  class="icon" alt="Lorem Ipsum">
+                      
+                          </div>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-45">
+                          <img data-img-src="assets/images/renderings/12.jpg" class="full-width" alt="Lorem Ipsum" src="assets/images/renderings/12.jpg">
+                        </div><!-- #modal-content-7 -->
+                     </article>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tabs-tab3">
+                    <!-- start 1 project -->
+                      <article class="feature-col col-md-6 text-center">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-17', '', 'full-size');" class="thumbnail linked">
+                          <iframe width="300" height="225" src="https://www.youtube.com/embed/0DnS9WwMzIQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                          <span class="color "><b>Ms House walkthrough</b></span>
+                        </a><!-- .thumbnail -->
+                      </article>
+                      <!-- end 1 project -->
+                       <!-- start 2 project -->
+                        <article class="feature-col col-md-6 text-center">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-17', '', 'full-size');" class="thumbnail linked">
+                          <iframe width="300" height="225" src="https://www.youtube.com/embed/_Yt0c1LF4N4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                          <span class="color "><b>Apartment Interior</b></span>
+                        </a><!-- .thumbnail -->
+                      </article>
+                      <!-- end 2 project -->
+                       <!-- start 3 project -->
+                      <article class="feature-col col-md-6 text-center">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-17', '', 'full-size');" class="thumbnail linked">
+                          <iframe width="300" height="225" src="https://www.youtube.com/embed/7vUJ9vjcl5w?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                          <span class="color ">Farnsworth house 3d</span>
+                        </a><!-- .thumbnail -->
+                      </article>
+                      <!-- end 3 project -->
+                       <!-- start 4 project -->
+                      <article class="feature-col col-md-6 text-center">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-17', '', 'full-size');" class="thumbnail linked">
+                          <iframe width="300" height="225"  src="https://www.youtube.com/embed/Q16xf_auWAI?rel=0&&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                          <span class="color "><b>Architectural Presentation walkthrough</b></span>
+                        </a><!-- .thumbnail -->
+                      </article>
+                      <!-- end 4 project -->
+                      <!-- end 5 project -->
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tabs-tab4">
+                    <!--
+                    <article class="feature-col col-md-3 text-center">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-17', '', 'full-size');" class="thumbnail linked">
+                          <img src="assets/images/extra/hotels/1.jpg"style="width:230px; height:180px;" class="icon" alt="Lorem Ipsum">
+                          <span class="color ">Εργαστήριο σύνθεσης</span>
+                        
+                        <div class="content-to-populate-in-modal" id="modal-content-17">
+                          <h3 align="left">Εργαστήριο “Από τη σύνθεση στην κατασκευή”</h3>
+                          <p align="left" style="font-size:15px;">
+                              Τοποθεσία: Ανατολική Θεσσαλονίκη<br>
+                              Χρονολογία: 2008<br>
+                              Μελέτη: Ε.Μπουτσιβάρη, Α.Αποστολίνας<br>
+                              Επίβλεψη: Ε.Κάστρο, Α.Τέλλιος<br>
+                              Έκταση: 40.000 Μ2<br>
+                              Κατηγορία: φοιτητική εργασία<br>
+                          </p>
+                          
+                          <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                              <div class="item"><a href="assets/images/extra/hotels/1.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/hotels/1.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/hotels/2.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/hotels/2.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/hotels/3.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/hotels/3.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/hotels/4.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/hotels/4.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/hotels/5.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/hotels/5.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/hotels/6.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/hotels/6.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/hotels/7.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/hotels/7.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/hotels/8.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/hotels/8.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/hotels/9.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/hotels/9.png"></a></div>
+                          </div>
+                        </div>
+                      </article>
+                      -->
+                      <!-- end 1 project -->
+                       <!-- start 2 project -->
+                       <article class="feature-col col-md-3 text-center">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-20', '', 'full-size');" class="thumbnail linked">
+                          <img  src="assets/images/extra/urban/1.png" style="width:230px; height:180px;" class="icon" alt="Lorem Ipsum">
+                          <span class="color ">Αστική σύνθεση</span>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-20">
+                          <h3 align="left">Εργαστήριο “Αστική σύνθεση”</h3>
+                          <p align="left" >
+                              Χρονολογία: 2009<br>
+                              Μελέτη: Ε.Μπουτσιβάρη, Θ.Κύττας, Σ.Στυλίδης<br>
+                              Επίβλεψη: Ν.Καλογήρου, Α.Πάκα<br>
+                              Κατηγορία: φοιτητική εργασία<br>
+                          </p>
+                          <!-- alt image slider inside popup -->
+                          <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                              <div class="item"><a href="assets/images/extra/urban/1.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/urban/1.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/urban/2.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/urban/2.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/urban/3.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/urban/3.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/urban/4.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/urban/4.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/urban/5.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/urban/5.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/urban/6.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/urban/6.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/urban/7.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/urban/7.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/urban/8.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/urban/8.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/urban/9.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/urban/9.jpg"></a></div>
+
+                          </div>
+                        </div>
+                      </article>
+                      <!-- end 2 project -->
+                       <!-- start 3 project -->
+                      <article class="feature-col col-md-3 text-center">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-21', '', 'full-size');" class="thumbnail linked">
+                          <img src="assets/images/extra/thesis/1.jpg"style="width:230px; height:180px;" class="icon" alt="Lorem Ipsum">
+                          <span class="color ">Συμβιωτικές σχέσεις</span>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-21">
+                        <h3 align="left">Διπλωματική εργασία σχεδιασμού “Συμβιωτικές σχέσεις στον ακάλυπτο”</h3>
+                          <p align="left" style="font-size:15px;">
+                              Τοποθεσία: Θεσσαλονίκη<br>
+                              Χρονολογία: 2013<br>
+                              Μελέτη: Ε.Μπουτσιβάρη<br>
+                              Επίβλεψη: Μ.Βογιατζάκη<br>
+                              Έκταση: 1.000 Μ2<br>
+                              Κατηγορία: φοιτητική εργασία<br>
+                          </p>
+                          <!-- alt image slider inside popup -->
+                          <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                              <div class="item"><a href="assets/images/extra/thesis/1.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/1.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/2.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/2.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/3.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/3.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/4.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/4.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/5.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/5.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/6.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/6.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/7.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/7.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/8.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/8.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/9.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/9.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/10.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/10.png"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/11.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/11.jpg"></a></div>
+                              <div class="item"><a href="assets/images/extra/thesis/12.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/thesis/12.jpg"></a></div>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- end 3 project -->
+                       <!-- start 4 project -->
+                      <article class="feature-col col-md-3 text-center">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-22', '', 'full-size');" class="thumbnail linked">
+                          <img src="assets/images/extra/kozani/1.jpg"style="width:230px; height:180px;" class="icon" alt="Lorem Ipsum">
+                          <span class="color ">Κοζάνη Χ4</span>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-22">
+                          <h3 align="left">Κοζάνη Χ4</h3>
+                          <p align="left" style="font-size:15px;">
+                              Τοποθεσία: Κοζάνη<br>
+                              Χρονολογία: 2013<br>
+                              Μελέτη: Ε.Μπουτσιβάρη, Θ.Ραβανίδου, Γ.Μπούσια<br>
+                              Διοργάνωση: ΕΑΧΑ Α.Ε.<br>
+                              Έκταση: 14.000 Μ2<br>
+                              Κατηγορία: αρχιτεκτονικός διαγωνισμός ιδεών<br>
+                          </p>
+                          <!-- alt image slider inside popup -->
+                          <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                            <div class="item"><a href="assets/images/extra/kozani/1.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/kozani/1.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/kozani/2.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/kozani/2.png"></a></div>
+                            <div class="item"><a href="assets/images/extra/kozani/3.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/kozani/3.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/kozani/4.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/kozani/4.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/kozani/5.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/kozani/5.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/kozani/6.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/kozani/6.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/kozani/7.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/kozani/7.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/kozani/8.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/kozani/8.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/kozani/9.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/kozani/9.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/kozani/10.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/kozani/10.jpg"></a></div>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- end 4 project -->
+                       <!-- start 5 project -->
+                      <article class="feature-col col-md-3 text-center">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-23', '', 'full-size');" class="thumbnail linked">
+                          <img src="assets/images/extra/imagine/1.png" style="width:230px; height:180px;"style="width:230px; height:180px;"class="icon" alt="Lorem Ipsum">
+                          <span class="color ">Imagine the city: Thessaloniki 2014</span>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-23">
+                          <h3 align="left">Imagine the city: Thessaloniki 2014</h3>
+                          <p align="left" style="font-size:15px;">
+                              Τοποθεσία: Θεσσαλονίκη<br>
+                              Χρονολογία: 2014<br>
+                              Ομάδα διοργάνωσης: citiTEN<br>
+                              Φωτογραφία: cre8ive studios<br>
+                              Έκταση: 14.000 Μ2<br>
+                              Κατηγορία: έκθεση αρχιτεκτονικών προτάσεων & παράλληλες δράσεις<br>
+                          </p>
+                          <!-- alt image slider inside popup -->
+                          <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                            <div class="item"><a href="assets/images/extra/imagine/1.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/imagine/1.png"></a></div>
+                            <div class="item"><a href="assets/images/extra/imagine/2.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/imagine/2.png"></a></div>
+                            <div class="item"><a href="assets/images/extra/imagine/3.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/imagine/3.png"></a></div>
+                            <div class="item"><a href="assets/images/extra/imagine/4.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/imagine/4.png"></a></div>
+                            <div class="item"><a href="assets/images/extra/imagine/5.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/imagine/5.png"></a></div>
+                            <div class="item"><a href="assets/images/extra/imagine/6.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/imagine/6.png"></a></div>
+                            <div class="item"><a href="assets/images/extra/imagine/7.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/imagine/7.png"></a></div>
+                            <div class="item"><a href="assets/images/extra/imagine/8.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/imagine/8.png"></a></div>
+                            <div class="item"><a href="assets/images/extra/imagine/9.png" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/imagine/9.png"></a></div>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- end 5 project -->
+                      <!-- start 6 project -->
+                      <article class="feature-col col-md-3 text-center">
+                        <a href="" onclick="populate_and_open_modal(event, 'modal-content-24', '', 'full-size');" class="thumbnail linked">
+                          <img src="assets/images/extra/ymca/1.jpg"style="width:230px; height:180px;" class="icon" alt="Lorem Ipsum">
+                          <span class="color ">Πρόταση εσωτερικών  </span>
+                        </a><!-- .thumbnail -->
+                        <div class="content-to-populate-in-modal" id="modal-content-24">
+                          <h3 align="left">Πρόταση εσωτερικών διαρρυθμίσεων στο κτίριο της ΧΑΝΘ</h3>
+                          <p align="left" style="font-size:15px;">
+                              Τοποθεσία: Θεσσαλονίκη<br>
+                              Χρονολογία: 2014<br>
+                              Μελέτη: Ε.Μπουτσιβάρη, Η.Κουτσιούμπα<br>
+                              Διοργάνωση: ΧΑΝΘ<br>
+                              Επιφάνεια: 1.100 Μ2<br>
+                              Κατηγορία: αρχιτεκτονικός διαγωνισμός<br>
+                          </p>
+                          <!-- alt image slider inside popup -->
+                          <div id="unique-id-for-alt-image-slider" class="owl-carousel popup-alt-image-gallery">
+                            <div class="item"><a href="assets/images/extra/ymca/1.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/ymca/1.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/ymca/2.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/ymca/2.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/ymca/3.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/ymca/3.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/ymca/4.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/ymca/4.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/ymca/5.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/ymca/5.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/ymca/6.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/ymca/6.jpg"></a></div>
+                            <div class="item"><a href="assets/images/extra/ymca/7.jpg" data-lightbox="popup-alt-gallery"><img class="lazyOwl" data-src="assets/images/extra/ymca/7.jpg"></a></div>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- end 6 project -->
+                    </div>
+                  </div><!-- .tab-content -->
+                </div><!-- .tabpanel -->
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+
+        </article><!-- .section-wrapper -->
+        <article id="text" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/works.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+                <div class="content-wrapper clearfix">
+            <div class="col-sm-11 col-md-12 pull-right">
+                <h1 class="section-title text-right">Προφίλ</h1>
+                <!-- grid -->
+                <section class="grid row clearfix clearfix-for-1cols">
+                  <!-- grid item -->
+                  <div class="col-lg-12">
+                    <div class="item-content clearfix">
+                        <p class="text-right">
+                          Το τεχνικό γραφείο “Μπουτσιβάρης” συγκεντρώνει 40 χρόνια λειτουργίας με έδρα τη Θεσσαλονίκη. Η πολυετής εμπειρία στα θέματα της μελέτης, επίβλεψης και κατασκευής αποτελεί εγγύηση για την προσφορά υπηρεσιών υψηλής ποιότητας. Αντικείμενο του γραφείου είναι κυρίως ιδιωτικά έργα κατοικιών και καταστημάτων, καθώς και η ανακαίνιση και διαμόρφωση εσωτερικών χώρων.<br><br>
+                          Στόχος κάθε μελέτης είναι να συνδυάζει δημιουργικά τις λειτουργικές απαιτήσεις του κάθε έργου, με την αισθητική ποιότητα και τα υλικά νέας τεχνολογίας. Η βασική ιδέα είναι η βέλτιστη διαβίωση του ανθρώπου στο χώρο, είτε πρόκειται για κατοικία, είτε για επαγγελματικό ή εμπορικό χώρο, με πάραλληλη αναβάθμιση της ποιότητας ζωής του.<br><br>
+                          Σκοπός της ομάδας είναι η ολοκληρωμένη αντιμετώπιση κάθε έργου από το σχεδιασμό μέχρι και την τελική κατασκευή, δημιουργώντας λύσεις που ικανοποιούν τις ιδιαίτερες ανάγκες και προτιμήσεις του χρήστη και τις αισθητικές του αναζητήσεις.<br><br><br><br><br><br><br><br>
+                        </p>
+                    </div><!-- end: .item-content -->
+                  </div><!-- end: .grid-item -->
+                  <!-- grid item -->
+                </section><!-- end: grid -->
+            </div><!-- .col-sm-11 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <article id="carousel" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg_team.png">
+          <div class="content-wrapper clearfix">
+          
+          <section class="team" id="anch-team">
+          <h1 class="section-title text-right">Ομάδα</h1>
+        <div class="comtainer">
+          <!-- Section Header -->
+          <!-- End Section Header -->
+            <div class="c3 col-sm-12 col-lg-4 animateblock rtl-1 speed-1 animated">
+              <div class="team-wrapper">
+                <!-- Photo -->
+                <i class="fa fa-user fa-2x"></i>
+                <div class="team-content">
+                  <h4 class="name">Χρήστος Μπουτσιβάρης</h4><br>
+                  <p class="description text-left">Τοπογράφος Μηχανικός&amp; Πολιτικός Μηχανικός ,Πολυτεχνικής Σχολής ΑΠΘ</p>
+                  <p class="description text-left" >Μέλος ΤΕΕ & Εργολήπτης Δημοσίων Έργων <br><br>Εγγεγραμμένος στο Μητρώο Ενεργειακών Επιθεωρητών<br>Δημοτικός Σύμβουλος Δήμου Πυλαίας-Χορτιάτη<br>Δραστηριοποιείται επαγγελματικά με πολυετή εμπειρία στη μελέτη, επίβλεψη και κατασκευή ιδιωτικών και δημόσιων έργων.</p>
+                </div>
+                <!-- Social buttons -->
+                <div class="team-media">
+                  <a class="team-social text-left  " ><span class="fa fa-envelope"> arbo_con@hotmail.com</span></a>
+              </div>
+            </div>
+          </div>
+            <div class="c2 col-sm-12 col-lg-4 animateblock ltr-1 speed-2 animated">
+              <div class="team-wrapper">
+                <!-- Photo -->
+                <i class="fa fa-user fa-2x"></i>
+                <div class="team-content">
+                  <h4 class="name">Κώστας Μπουτσιβάρης</h4><br>
+                  <p class="description text-left">Πολιτικός Μηχανικός , Πολυτεχνική Σχολή Α.Π.Θ.</p>
+                  <p class="description text-left">Μέλος ΤΕΕ (2008)<br><br>Έκδοση οικοδομικών αδειών, ενεργειακός σχεδιασμός κτιρίων κατά ΚΕΝΑΚ, ρύθμιση αυθαιρέτων με το Ν.4178/13 , εκδοση πιστοποιητικών ενεργειακής απόδοσης (ΠΕΑ)</p>
+                </div>
+               <br><br><br>
+                <!-- Social buttons -->
+                <div class="team-media">
+                  <a class="team-social hastooltip linkedin" data-toggle="tooltip" data-placement="bottom" title="" href="#" data-original-title="Linkedin"><span class="fa fa-linkedin"></span></a>&nbsp;&nbsp;
+                  <a class="team-social hastooltip facebook" data-toggle="tooltip" data-placement="bottom" title="" href="#" data-original-title="Facebook"><span class="fa fa-facebook"></span></a>&nbsp;&nbsp;
+                  <a class="team-social text-left  " ><span class="fa fa-envelope"> boutsivariskostas@gmail.com</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="c3 col-sm-12 col-lg-4 animateblock rtl-1 speed-1 animated">
+              <div class="team-wrapper">
+                <!-- Photo -->
+                <i class="fa fa-user fa-2x"></i>
+                <div class="team-content">
+                  <h4 class="name">Έλενα Μπουτσιβάρη</h4><br>
+                  <p class="description text-left">Αρχιτέκτων Μηχανικός, Πολυτεχνικής Σχολής ΑΠΘ</p>
+                  <p class="description text-left">Μέλος ΤΕΕ<br><br>Έχει λάβει μέρος σε αρχιτεκτονικά εργαστήρια και διαγωνισμούς και έχει συμμετάσχει εθελοντικά σε πολλές αρχιτεκτονικές και καλλιτεχνικές διοργανώσεις.</p>
+                </div><br><br>
+                <!-- Social buttons -->
+                <div class="team-media">
+                  <a class="team-social hastooltip linkedin" data-toggle="tooltip" data-placement="bottom" title="" href="#" data-original-title="Linkedin"><span class="fa fa-linkedin"></span></a>&nbsp;&nbsp;
+                  <a class="team-social hastooltip facebook" data-toggle="tooltip" data-placement="bottom" title="" href="#" data-original-title="Facebook"><span class="fa fa-facebook"></span></a>&nbsp;&nbsp;
+                  <a class="team-social text-left  " ><span class="fa fa-envelope"> elena.boutsivari@gmail.com</span></a>
+              </div>
+            </div>
+          </div>
+      </div>
+      </section>  
+        </article><!-- .section-wrapper -->
+        <article id="contact" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg4.jpg">
+          <div class="content-wrapper clearfix ">
+              <h1 class="section-title text-right">Επικοινωνία</h1>
+          <div id="googleMap" style="width:100%;height:320px;"></div><br><br>
+                <!-- CONTACT DETAILS -->
+                <div class="contact-details col-sm-5 col-md-3">
+                  <p>Μοναστηρίου 192,<br/>Θεσσαλονίκη,<br/>Τ.Κ. 54628<br/>Ελλάδα</p>
+                  <p>Τηλ: (+30) 2310 555509</p>
+                  <p>fax: (+30) 2310 510657</p>
+                  <p><a href="mailto:elena.boutsivari@gmail.com">info@boutsivaris.gr</a></p>
+                </div>
+                <!-- END: CONTACT DETAILS -->
+                <!-- CONTACT FORM -->
+                <div class="col-sm-7 col-md-9">
+                  <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+                  <form class="form-style validate-form clearfix" action="assets/php/mail.php" method="POST" role="form">
+                    <!-- form left col -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="Ονομα" name="name">
+                      </div>  
+                      <div class="form-group">
+                        <input type="email" class="text-field form-control validate-field required" data-validation-type="email" id="form-email" placeholder="Email " name="email">
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" class="text-field form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Αριθμό" name="contact_number">
+                      </div>    
+                      <div class="form-group text-right">
+                        <img id="form-captcha-img" src="assets/php/form_captcha/captcha_img.php">
+                        <input type="text" class="text-field form-control validate-field required" data-validation-type="captcha" id="form-captcha" placeholder="Κωδικός" name="captcha">
+                        <span id="form-captcha-refresh" class="fa fa-refresh" title="Reload"></span>
+                      </div>                                   
+                    </div><!-- end: form left col -->
+                    <!-- form right col -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <textarea placeholder="Μήνυμα..." class="form-control validate-field required" name="message"></textarea>
+                      </div> 
+                      <div class="form-group">
+                        <img src="assets/images/theme_images/loader-form.GIF" class="form-loader">
+                        <button type="submit" class="btn btn-sm btn-outline-inverse">Αποστολή</button>
+                      </div> 
+                      <div class="form-group form-general-error-container"></div>           
+                    </div><!-- end: form right col -->
+                  </form>
+                </div><!-- end: CONTACT FORM -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+      </section><!-- #main-content -->
+      <!-- Footer -->
+      <section id="footer">
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+        <ul class="social-icons">
+          <li style="font-size:15px;">Like us on <a href="https://www.facebook.com/Boutsivaris.Des.Con?fref=ts" target="_blank" title="Facebook"><i style ="color: #99ffff;" class="fa fa-facebook fa-1x primary " ></i></a></li>
+        </ul>
+        <!-- copyright text -->
+        <div class="footer-text-line" style="font-sixe:17px;">Copyright © 2015 boutsivaris.gr <br> All rights reserved <br><br> <a href="http://mitro-an.gr/"> Crafted by<br> Anastasios Mitronatsios</a></div>
+      </section>
+      <!-- end: Footer -->      
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body clearfix">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+    <!-- Javascripts
+    ================================================== -->
+
+    <!-- Jquery and Bootstrap JS -->
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Easing - for transitions and effects -->
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+
+    <!-- background image strech script -->
+    <script src="assets/js/vegas/jquery.vegas.min.js"></script>
+
+    <!-- detect mobile browsers -->
+    <script src="assets/js/detectmobilebrowser.js"></script>
+
+    <!-- detect scrolling -->
+    <script src="assets/js/jquery.scrollstop.min.js"></script>
+
+    <!-- owl carousel js -->
+    <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- lightbox js -->
+    <script src="assets/js/lightbox/js/lightbox.min.js"></script>
+
+    <!-- intro animations -->
+    <script src="assets/js/wow/wow.min.js"></script>
+
+    <!-- responsive videos -->
+    <script src="assets/js/jquery.fitvids.js"></script>
+
+    <!-- Custom functions for this theme -->
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/initialise-functions.js"></script>
+    
+
+    <!-- Google Map -->
+    
+    
+
+    <!-- IE9 form fields placeholder fix -->
+    <!--[if lt IE 9]>
+    <script>contact_form_IE9_placeholder_fix();</script>
+    <![endif]-->  
+
+  </body>
+</html>
